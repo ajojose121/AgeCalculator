@@ -1,24 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="fontawesome-free-6.6.0-web/fontawesome-free-6.6.0-web/css/all.css">
+    <style>
+        body{
+            background-image: url("https://files.oaiusercontent.com/file-8JRTH8oZLg7P83oqUg62Qa?se=2025-03-04T06%3A07%3A59Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3Da566543a-df60-49b1-b7d4-b0914fbfd2ce.webp&sig=SbVwU3JXTEvkT39g3QSZggRbab0ixFkpyPgV/WRRa9w%3D");
+        }
+        .dob{
+            color: rgb(226, 17, 17);
+            font-size: 50px;
+            font-weight: bold;
+            display: flex;
+            padding: 10px;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+        }
+        .Dob{
+           padding: 10px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+        }
+        #Dob{
+            background-color: beige;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+        }
+        #Dob:hover{
+            background-color: bisque;
+        }
+        .btn{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+        }
+        #btn{
+            border-radius: 5px;
+            padding: 10px;
+            background-color: gray;
+        }
+        #btn:hover{
+            background-color: cornflowerblue;
+        }
+        .fa{
+            display: flex;
+            gap: 5px;
+        }
+        .age{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+        }
+        .Age{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+        }
+        #age{
+            color: darkred;
+           font-size: 40px;
+           font-weight: bold;
+           padding: 10px;
+        }
+    </style>
 </head>
 <body>
    <div>
     <div class="dob">
-        <label for="" id="dob">date of Birth</label>
+        <label for="" id="dob">Date of Birth</label>
     </div>
-    <div>
+    <div class="Dob">
         <input type="date" id="Dob">
     </div>
    </div>
    <div class="btn">
-        <button id="btn">calculate age</button>
+        <button id="btn">calculate age<i class="fa-solid fa-magnifying-glass fa-beat"></i></button>
    </div>
    <div class="age">
-        <label for="" id="age">Age</label>
+        <label for="" id="age">your age is : </label>
    </div>
    <div class="Age">
         <input type="number" id="Age" readonly>
