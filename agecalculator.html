@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <div>
+    <div class="dob">
+        <label for="" id="dob">date of Birth</label>
+    </div>
+    <div>
+        <input type="date" id="Dob">
+    </div>
+   </div>
+   <div class="btn">
+        <button id="btn">calculate age</button>
+   </div>
+   <div class="age">
+        <label for="" id="age">Age</label>
+   </div>
+   <div class="Age">
+        <input type="number" id="Age" readonly>
+   </div>
+
+   <script>
+    document.getElementById("btn").addEventListener("click",()=>{
+        let dateinput=document.getElementById("Dob").value
+        let date=new Date(dateinput)
+        let today= new Date();
+
+        let ageyear=today.getFullYear()-date.getFullYear()
+        let agemonth=today.getMonth()-date.getMonth()
+        let ageday=today.getDate()-date.getDate()
+        if (agemonth<0 || agemonth===0 && ageday<0) {
+            ageyear--
+        }
+        document.getElementById("Age").value=ageyear
+    })
+   </script>
+</body>
+</html>
